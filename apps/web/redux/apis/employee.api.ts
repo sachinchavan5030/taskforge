@@ -4,7 +4,7 @@ import { CREATE_COMMUNICATION_REQUEST, CREATE_COMMUNICATION_RESPONSE, GET_COMMUN
 
 export const employeeApi = createApi({
     reducerPath: "employeeApi",
-    baseQuery: fetchBaseQuery({ baseUrl: `${APP_URL}/api/employee`, credentials: "include" }),
+    baseQuery: fetchBaseQuery({ baseUrl: `/api/employee`, credentials: "include" }),
     tagTypes: ["communication"],
     endpoints: (builder) => {
         return {
