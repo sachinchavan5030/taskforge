@@ -122,7 +122,8 @@ const TaskCard = ({ t }: { t: Task }) => {
         title: z.string().min(3),
         desc: z.string(),
         due: z.coerce.date(),
-        hero: z.instanceof(FileList)
+        // hero: z.instanceof(FileList)
+        hero: z.any()
     }) satisfies z.ZodType<UPDATE_TASK_DETAILS_REQUEST>
 
     const { setValue, register, handleSubmit, reset, formState: { errors } } = useForm({
