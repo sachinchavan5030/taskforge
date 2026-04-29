@@ -1,0 +1,1 @@
+ALTER TABLE "communication" ALTER COLUMN "msg" SET NOT NULL;
